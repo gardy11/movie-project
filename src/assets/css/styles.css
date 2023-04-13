@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities"; */
+
+input.search-input {
+    background-color: transparent;
+    border: 0;
+    outline: none; /* 外框效果 */
+    color: #fff;
+    margin: 0 6px 0 12px;
+
+    &::placeholder {
+      color: #fff;
+      opacity: 0.6;
+    }
+}
+
+/* class="mb-3 mr-3 bg-gray-600 rounded-full appearance-none w-60 px-7 focus:outline-none focus:outline-shadow search-input" */
+
+
+/* <svg class="w-4 mt-2 ml-2 text-gray-900 fill-current" fill="#ffffff" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="m14.91 13.09-3.68-3.21a4.86 4.86 0 0 0 .86-2.77A5.34 5.34 0 0 0 6.59 2a5.35 5.35 0 0 0-5.5 5.15 5.34 5.34 0 0 0 5.5 5.15 5.71 5.71 0 0 0 3.82-1.44L14.08 14zM6.59 11a4.09 4.09 0 0 1-4.25-3.9 4.09 4.09 0 0 1 4.25-3.9 4.09 4.09 0 0 1 4.25 3.9A4.08 4.08 0 0 1 6.59 11z"></path></g></svg> */
+
+
+
+@media(max-width:900px){
+  .rwd {
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+  }
+}
+
+.spinner{
+  position:absolute;
+}
+
+.shadow:hover{
+box-shadow:
+1px 1px black,
+2px 2px black,
+3px 3px black,
+4px 4px black,
+5px 5px black,
+6px 6px black;
+-webkit-transform: translateX(-3px);
+transform: translateX(-3px);
+transition: .5s ease;
+}
+
+/* .button-size {
+      width: 31px;
+      height: 31px;
+      line-height: calc(31px - 2px);
+      text-align: center;
+      border-radius: 50%;
+      border: 1px solid #3c3c3c;
+      background-color: #3c3c3c2c;
+      margin-left: 10px;
+      cursor: pointer;
+      z-index:1;
+
+      &:hover {
+        border: 1px solid #fff;
+      }
+    } */
+
+    .button-size {
+          position: absolute;
+          top: 1rem;
+          right: 1rem;
+          height: 2rem;
+          width: 2rem;
+          line-height: calc(2rem - 1px);
+          text-align: center;
+          border-radius: 50%;
+          border: 1px solid #3c3c3c;
+          background-color: #3c3c3c5c;
+          margin-left: 10px;
+          cursor: pointer;
+          /* color:blue; !important */
+          title:"Twitter"
+
+          &:hover {
+            border: 1px solid #fff;
+          }
+        }
+      
+  
