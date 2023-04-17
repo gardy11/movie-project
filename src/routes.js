@@ -13,8 +13,8 @@ let router = new VueRouter({
         //     redirect: { name: 'home' }
         // },
         {
-            path: "/",
-            // path: "/movie-project/",
+            // path: "/",
+            path: "/movie-project/",
             name: "home",
             component: HomeWorld,
         },
