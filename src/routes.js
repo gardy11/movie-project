@@ -8,10 +8,10 @@ import WatchMovie from './components/movies/WatchMovie'
 let router = new VueRouter({
     mode: "history",
     routes: [
-        // {
-        //     path: '/',
-        //     redirect: { name: 'home' }
-        // },
+        {
+            path: '/',
+            redirect: { name: 'home' }
+        },
         {
             // path: "/",
             path: "/movie-project/",
