@@ -3,7 +3,9 @@ module.exports = defineConfig({
   transpileDependencies: true,
   //關閉eslint檢查
   // lintOnSave: false
-  publicPath: '/'
+  // publicPath: '/',
+  publicPath: '/movie-project/'
+
 })
 
 

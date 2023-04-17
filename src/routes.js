@@ -9,7 +9,8 @@ let router = new VueRouter({
     mode: "history",
     routes: [
         {
-            path: "/",
+            // path: "/",
+            path: "/movie-project/",
             name: "home",
             component: HomeWorld,
         },
