@@ -5,7 +5,8 @@
       <SearchBar />
     </div>
 
-    <router-view />  <!-- 可以顯示components裡的  HomeWorld.vue的內容 -->
+    <HomeWorld />
+    <!-- <router-view />  可以顯示components裡的  HomeWorld.vue的內容 -->
     <FooterBar />
   </div>
 </template>
@@ -14,6 +15,7 @@
 import NavBar from "./components/header/NavBar.vue";
 import SearchBar from "./components/header/SearchBar.vue";
 import FooterBar from "./components/footer/FooterBar.vue";
+import HomeWorld from "./components/front/HomeWorld.vue";
 
 
 export default {
@@ -22,6 +24,7 @@ export default {
     NavBar,
     SearchBar,
     FooterBar,
+    HomeWorld
   }
   
 }
