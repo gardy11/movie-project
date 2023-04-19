@@ -4,11 +4,11 @@ module.exports = defineConfig({
   //關閉eslint檢查
   // lintOnSave: false
   // publicPath: '/',
-  // publicPath: '/movie-project/'
+  publicPath: '/movie-project/'
 
-  publicPath: process.env.NODE_ENV === 'production'
-    ? '/movie-project/'
-    : '/'
+  // publicPath: process.env.NODE_ENV === 'production'
+  //   ? '/movie-project/'
+  //   : '/'
 
 })
 
