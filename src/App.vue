@@ -6,7 +6,7 @@
     </div>
 
     <!-- <HomeWorld /> -->
-    <router-view />  可以顯示components裡的  HomeWorld.vue的內容
+    <router-view />  <!--可以顯示components裡的  HomeWorld.vue的內容-->
     <FooterBar />
   </div>
 </template>
