@@ -15,7 +15,7 @@ input.search-input {
     color: #fff;
     margin: 0 6px 0 12px;
 
-    &::placeholder {
+    &:placeholder {
       color: #fff;
       opacity: 0.6;
     }
