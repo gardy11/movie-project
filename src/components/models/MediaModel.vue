@@ -32,7 +32,7 @@
               <img :src="mediaURL" v-if="!isVideo" />
               <iframe
                 class="absolute top-0 left-0 w-full h-full responsive-iframe youtube-video"
-                style="border: 0"
+                style="border:0"
                 allow="autoplay; encrypted-media"
                 allowfullscreen
                 v-if="isVideo"

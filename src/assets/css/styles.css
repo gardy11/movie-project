@@ -86,7 +86,7 @@ transition: .5s ease;
           /* color:blue; !important */
           title:"Twitter"
 
-          &:hover {
+          &::hover {
             border: 1px solid #fff;
           }
         }

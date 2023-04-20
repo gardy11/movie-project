@@ -71,12 +71,12 @@ export default {
   padding: 15px;
   font-size: 20px;
   font-weight: bolder;
-  min-width: 100%;
-  box-sizing: border-box;
+  min-width:100%;
+  box-sizing:border-box;
 }
 
 .next span,
 .prev span {
-  color: white;
+  color:white;
 }
 </style> 
