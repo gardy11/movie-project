@@ -28,10 +28,6 @@
         </a>
     </div>
 
-
-    <!-- <div class="flex justify-center">
-      <div class="spinner">11111</div>
-    </div> -->
   </div>
 </template>
 
@@ -60,24 +56,10 @@ export default {
           "https://api.themoviedb.org/3/person/popular?language=zh-TW&page=" + page
         );
         this.actors = response.data.results;
-        //this.actors.push(...response.data.results);
       } catch (error) {
         console.log(error);
       }
     },
-
-    // scroll() {
-    //   window.onscroll = () => {
-    //     let bottomOfWindow =
-    //       document.documentElement.scrollTop + window.innerHeight ===
-    //       document.documentElement.offsetHeight;
-
-    //     if (bottomOfWindow) {
-    //       currentPage += 1;
-    //       this.fetchActors((currentPage += 1));
-    //     }
-    //   };
-    // },
 
     async previous(){
         currentPage -= 1;

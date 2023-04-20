@@ -36,25 +36,16 @@
         </span>
       </div>
   
-      <!-- <span class="ml-1 text-sm text-gray-500">
-        <span :key="genre" v-for="(genre, index) in movie.genre_ids">
-          {{ genreTypeName(genre, index) }}
-        </span>
-      </span> -->
     </router-link>
   </div>
 </template>
 
 <script>
-// import { ToTraditional } from "../../services/ToTraditional";
 export default {
   props: {
     movie: {
       required: true,
     },
-    // genres: {
-    //   required: true,
-    // },
   },
 
   computed: {
@@ -62,20 +53,6 @@ export default {
       return "https://image.tmdb.org/t/p/w500" + this.movie.poster_path;
     },
   },
-
-  // methods: {
-  //   genreTypeName(genraId, index) {
-  //     for (const item of this.genres) {
-  //       if (item.id == genraId) {
-  //         if (this.movie.genre_ids.length - 1 == index) {
-  //           return ToTraditional(item.name);
-  //         } else {
-  //           return ToTraditional(item.name) + "、";
-  //         }
-  //       }
-  //     }
-  //   },
-  // },
 };
 </script>
 

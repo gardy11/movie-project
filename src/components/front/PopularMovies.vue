@@ -30,7 +30,6 @@ export default {
       try {
         const response = await this.$http.get("/movie/popular?language=zh-TW&region=TW");
         this.movies = response.data.results;
-        // console.log(response.data.results[2].title);
       }catch(error){
         console.log(error);
       }

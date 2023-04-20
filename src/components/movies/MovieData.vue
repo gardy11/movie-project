@@ -212,10 +212,6 @@ export default {
     };
   },
 
-  // mounted() {
-  //   // console.log(this.$route.params.id);
-  //   // this.fetchmovie(this.$route.params.id);
-  // },
   watch: {
     "$route.params.id": {
       handler() {
@@ -265,18 +261,6 @@ export default {
         }
       }
     },
-
-    // async fetchMovie(movieId) {
-    //   try {
-    //     const response = await fetch(`https://api.themoviedb.org/3/movie/${movieId}?api_key=${apiKey}&language=zh-TW`);
-    //     const data = await response.json();
-    //     this.movie = data;
-
-    //     await this.fetchCollections(this.movie.belongs_to_collection.id);
-    //   } catch (error) {
-    //     console.error(error);
-    //   }
-    // },
 
     async fetchCollections(collectionId) {
       if (collectionId) {

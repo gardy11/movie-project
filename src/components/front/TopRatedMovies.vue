@@ -63,8 +63,6 @@
     position: absolute;
     background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
-    /* color: rgb(192 132 252); */
-    /* color: rgba(255, 255, 0, 0.842); */
     bottom: 0;
     position: absolute;
     bottom: 0;

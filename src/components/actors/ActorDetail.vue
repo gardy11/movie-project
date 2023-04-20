@@ -119,24 +119,6 @@
         </div>
       </div>
     </div>
-
-    <!--  -->
-    <!-- <div class="border-b border-gray-800 credits">
-      <div class="container px-4 py-16 mx-auto">
-        <h2 class="text-4xl font-semibold">Credits</h2>
-        <ul class="pl-5 mt-8 leading-loose list-disc">
-          <li :key="cast.id" v-for="cast in castMovies">
-            <strong>{{ castDetails(cast) }} </strong>
-            <router-link :to="`/movie/${cast.id}`" class="hover:underline">
-              {{ cast.title }}
-            </router-link>
-            as {{ cast.character }}
-          </li>
-        </ul>
-      </div>
-    </div> -->
-
-    <!--  -->
   </div>
 </template>
 
@@ -184,15 +166,6 @@ export default {
       this.castMovies = response.data.cast.filter(
         (x) => x.media_type == "movie"
       )
-      // console.log(this.castMovies)
-
-//       this.castMovies = this.castMovies.sort(
-//   (objA, objB) => Number(objA.release_date) - Number(objB.release_date),
-// );
-      
-      // this.castTvs = response.data.cast.filter((x) => x.media_type == "tv");
-      // this.knownFor = response.data.cast.filter((x) => x.media_type == "movie");
-      // .slice(0, 5);
     },
 
     movieImage(movie) {
@@ -210,10 +183,6 @@ export default {
       );
       this.socialDetails = response.data;
     },
-
-    // castDetails(cast) {
-    //   return parseInt(cast.release_date) + " .";
-    // },
 
     castProfileImage() {
       if (this.actor.profile_path) {

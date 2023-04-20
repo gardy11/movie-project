@@ -21,7 +21,7 @@
             />
 
             <div
-              class="text-white movie-detail-header-add-button button-size"
+              class="text-white button-size"
               @click.stop.prevent="addToWatch(movie)"
             >
             &check;
@@ -55,7 +55,6 @@ export default {
     console.log(this.toWatchMovies);
   },
 
-  /////////////////////
   watch: {
     toWatchMovies: {
       handler: function () {
@@ -64,7 +63,6 @@ export default {
       deep: true,
     },
   },
-  /////////////////////
 
   methods: {
     movieImage(movie) {

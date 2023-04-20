@@ -16,14 +16,6 @@
           </button>
         </div>
 
-        <!-- <div class="flex">
-          <button
-            @click="close"
-            class="text-3xl leading-none hover:text-gray-300"
-          >
-            &lt;
-          </button> -->
-
           <div class="px-8 py-8 modal-body">
             <div
               class="relative overflow-hidden responsive-container"
@@ -38,16 +30,7 @@
                 v-if="isVideo"
                 :src="mediaURL"
               ></iframe>
-
-              <!-- <button
-                @click="close"
-                class="text-3xl leading-none hover:text-gray-300"
-              >
-                &gt;
-              </button>
-            </div> -->
-
-            
+                         
           </div>
         </div>
       </div>
@@ -70,12 +53,7 @@ export default {
   },
   methods: {
     close() {
-    //   const aa = document.getElementsByClassName('youtube-video')[0]
-    //   await aa.contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
-    //   console.log(aa)
-      
      this.$emit("input", !this.value);
-
     },
   },
 };
