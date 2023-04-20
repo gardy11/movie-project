@@ -2,13 +2,11 @@
   "name": "movie_project",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://gardy11.github.io/movie_project",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",    
-    "deploy": "gh-pages -d dist",
-    "predeploy": "npm run build"
+    "deploy": "node scripts/gh-pages-deploy.js"
 
   },
   "dependencies": {
