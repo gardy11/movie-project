@@ -2,11 +2,13 @@
   "name": "movie_project",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://gardt11.github.io/movie_project",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",    
-    "deploy": "node scripts/gh-pages-deploy.js"
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build"
 
   },
   "dependencies": {
