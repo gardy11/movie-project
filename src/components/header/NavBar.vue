@@ -12,9 +12,10 @@
         width="135px"
         height="45px"
         viewBox="0 0 135 45"
-        enable-background="new 0 0 135 45"
+        
         xml:space="preserve"
       >
+        
         <image
           id="image0"
           width="135"

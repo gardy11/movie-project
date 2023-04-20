@@ -10,7 +10,7 @@
       :autoplay="true"
       :autoplay-timeout="3000"
     >
-      <slide :index="i" :key="i" v-for="(movie, i) in this.upcomingMovies">
+      <slide :index="i" :key="i" v-for="(movie, i) in upcomingMovies">
         <figure>
           <router-link :to="`/movie/${movie.id}`">
             <img

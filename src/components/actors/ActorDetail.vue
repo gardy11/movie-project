@@ -11,7 +11,7 @@
             <a              
               :href="'https://facebook.com/' + socialDetails.facebook_id"
               title="Facebook"
-              target="blank"
+              target="_blank"
             >
               <svg
                 class="w-6 text-gray-400 fill-current hover:text-white"
@@ -28,7 +28,7 @@
             <a              
               :href="'https://instagram.com/' + socialDetails.instagram_id"
               title="Instagram"
-              target="blank"
+              target="_blank"
             >
               <svg
                 class="w-6 text-gray-400 fill-current hover:text-white"
@@ -45,7 +45,7 @@
             <a             
               :href="'https://twitter.com/' + socialDetails.twitter_id"
               title="Twitter"
-              target="blank"
+              target="_blank"
             >
               <svg
                 class="w-6 text-gray-400 fill-current hover:text-white"
