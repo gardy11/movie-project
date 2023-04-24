@@ -1,12 +1,12 @@
 <template>
   <div>
-    <div class="container flex px-4 pt-16 mx-auto">
+    <div class="container flex pt-16 mx-auto actor-page">
       <div class="flex-none">
-        <img :src="castProfileImage()" alt="" />
+        <img :src="castProfileImage()" alt="" class="max-sm:m-auto" />
       </div>
 
       <div class="ml-10">
-        <ul class="flex-col mt-40 space-y-10">
+        <ul class="md:mt-40 md:flex-col md:space-y-10 max-sm:flex socail-icon max-sm:space-x-10">
           <li v-if="socialDetails.facebook_id">
             <a              
               :href="'https://facebook.com/' + socialDetails.facebook_id"
@@ -60,7 +60,7 @@
         </ul>
       </div>
 
-      <div class="ml-16">
+      <div class="ml-16 max-lg:mx-5 max-lg:mt-5">
         <h2 class="text-4xl font-semibold">
           {{ this.actor.name }}
         </h2>
@@ -99,10 +99,10 @@
       </div>
     </div>
 
-    <div class="container mx-auto mb-12">
+    <div class="container mx-auto mb-12 px-9" v-if="this.castMovies!=false">
       <h4 class="mt-10 text-xl font-semibold text-yellow-500 ">電影作品</h4>
       <div
-        class="grid grid-cols-1 gap-8 mt-4 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-6"
+        class="grid grid-cols-2 gap-8 mt-4 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-6"
       >
         <div :key="movie.id" v-for="movie in this.castMovies">
           <router-link
@@ -166,6 +166,11 @@ export default {
       this.castMovies = response.data.cast.filter(
         (x) => x.media_type == "movie"
       )
+      if(this.castMovies == false){
+        this.castMovies = response.data.cast.filter(
+        (x) => x.media_type == "tv"
+      )
+      }
     },
 
     movieImage(movie) {

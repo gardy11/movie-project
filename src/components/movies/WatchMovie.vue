@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto">
+  <div class="container mx-auto px-9">
     <h4 class="mt-10 text-xl font-semibold text-yellow-500">收藏清單</h4>
     <h4
       v-if="this.toWatchMovies == false"
@@ -8,7 +8,7 @@
       尚無收藏電影
     </h4>
     <div
-      class="grid grid-cols-1 gap-8 mt-4 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-6"
+      class="grid grid-cols-2 gap-8 mt-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 movie-poster"
     >
       <div :key="movie.id" v-for="movie in this.toWatchMovies">
         <router-link

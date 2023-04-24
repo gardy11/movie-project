@@ -1,5 +1,5 @@
 <template>
-  <div class="relative flex mx-5 mt-5">
+  <div class="flex mx-5 mt-5">
     <input
       ref="searchBox"
       type="search"
@@ -10,10 +10,10 @@
       @focus="handleFocus"
     />
 
-    <div class="absolute top-1">
+    <div class="absolute">
       <svg
         @click="debounceSearch"
-        class="w-4 mt-2 ml-2 fill-current"
+        class="w-4 mt-3 ml-2 fill-current searchbar-icon"
         fill="#ffffff"
         viewBox="0 0 16 16"
         xmlns="http://www.w3.org/2000/svg"

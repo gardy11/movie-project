@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div class="flex justify-between border-b border-gray-500">
+    <div class="flex justify-between border-b border-gray-500 header-bar">
       <NavBar />
       <SearchBar />
     </div>

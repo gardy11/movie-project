@@ -1,10 +1,10 @@
 <template>
-    <div class="container mx-auto border-t border-gray-600">
+    <div class="container px-2 mx-auto border-t border-gray-600">
         <h2 class="mt-2 text-4xl font-semibold">
             演員
         </h2>
 
-        <div class="grid grid-cols-1 gap-2 mt-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-6">
+        <div class="grid grid-cols-2 gap-2 mt-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
            <div class="mx-auto" :key="index" v-for="(cast, index) in casts">
                 <router-link :to="`/actor/${cast.id}`">
                     <img 

@@ -3,7 +3,7 @@
     <h2 class="text-xl font-semibold text-yellow-500">熱門演員</h2>
 
     <div
-      class="grid grid-cols-1 gap-6 mt-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
+      class="grid grid-cols-2 gap-6 mt-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
     >
       <ActorsItem
         class="mx-auto"

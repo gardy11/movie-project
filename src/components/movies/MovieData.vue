@@ -1,9 +1,9 @@
 <template>
   <div>
     <div class="container flex pb-3 mx-auto mt-10 mb-2 rwd">
-      <img :src="posterPath" class="w-64 h-96" alt="" />
-      <div class="flex-col items-center justify-between ml-24">
-        <h1 class="text-4xl font-semibold">{{ movie.title }}</h1>
+      <img :src="posterPath" class="w-64 max-lg:m-auto h-96" alt="" />
+      <div class="flex-col items-center justify-between ml-24 max-lg:ml-5">
+        <h1 class="text-4xl font-semibold max-lg:mt-5">{{ movie.title }}</h1>
 
         <h1
           v-if="movie.original_title != movie.title"
@@ -58,7 +58,7 @@
             </div>
           </div>
         </div>
-        <p class="mt-6">
+        <p class="mt-6 max-lg:mx-5">
           {{ movie.overview }}
         </p>
 
