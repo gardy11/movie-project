@@ -1,6 +1,6 @@
 <template>
-  <div class="container px-4 pt-16 mx-auto mb-16">
-    <h2 class="text-xl font-semibold text-yellow-500">熱門演員</h2>
+  <div class="container px-4 mx-auto ">
+    <h2 class="mt-10 text-xl font-semibold text-yellow-500">熱門演員</h2>
 
     <div
       class="grid grid-cols-2 gap-6 mt-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
