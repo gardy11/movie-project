@@ -13,8 +13,15 @@
 
 * GitHub Page : https://gardy11.github.io/movie-project/  
 
+# ScreenShots
+
+* home-page：
 ![image](https://raw.githubusercontent.com/gardy11/movie-project/main/home-page.PNG)
-
-![image](https://raw.githubusercontent.com/gardy11/movie-project/main/actor-page.PNG)
-
+* movie-detail：
+![image](https://raw.githubusercontent.com/gardy11/movie-project/main/movie-detail.PNG)
+* collection：
 ![image](https://raw.githubusercontent.com/gardy11/movie-project/main/collection.PNG)
+* actor-page：
+![image](https://raw.githubusercontent.com/gardy11/movie-project/main/actor-page.PNG)
+* actor-detai：
+![image](https://raw.githubusercontent.com/gardy11/movie-project/main/actor-detail.PNG)
