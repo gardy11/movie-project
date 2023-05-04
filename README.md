@@ -13,5 +13,4 @@
 
 * GitHub Page : https://gardy11.github.io/movie-project/  
 
-擷取.PNG
 ![image](https://raw.githubusercontent.com/gardy11/movie-project/main/擷取.PNG)
