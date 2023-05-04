@@ -13,4 +13,8 @@
 
 * GitHub Page : https://gardy11.github.io/movie-project/  
 
-![image](https://raw.githubusercontent.com/gardy11/movie-project/main/擷取.PNG)
+![image](https://raw.githubusercontent.com/gardy11/movie-project/main/home-page.PNG)
+
+![image](https://raw.githubusercontent.com/gardy11/movie-project/main/actor-page.PNG)
+
+![image](https://raw.githubusercontent.com/gardy11/movie-project/main/collection.PNG)
