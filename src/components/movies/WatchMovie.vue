@@ -17,7 +17,7 @@
         >
             <img
               :src="movieImage(movie)"
-              class="mt-1 transition duration-150 ease-in-out hover:opacity-75"
+              class="mt-1 transition duration-150 ease-in-out hover:opacity-75 max-lg:m-auto"
             />
 
             <div

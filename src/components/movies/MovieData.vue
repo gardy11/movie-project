@@ -3,15 +3,15 @@
     <div class="container flex pb-3 mx-auto mt-10 mb-2 rwd">
       <img :src="posterPath" class="w-64 max-lg:m-auto h-96" alt="" />
       <div class="flex-col items-center justify-between ml-24 max-lg:ml-5">
-        <h1 class="text-4xl font-semibold max-lg:mt-5">{{ movie.title }}</h1>
+        <h1 class="text-4xl font-semibold max-lg:mt-5 max-lg:text-center">{{ movie.title }}</h1>
 
         <h1
           v-if="movie.original_title != movie.title"
-          class="text-xl font-semibold text-purple-500"
+          class="text-xl font-semibold text-purple-500 max-lg:text-center"
         >
           {{ movie.original_title }}
         </h1>
-        <div class="mt-4 text-sm">
+        <div class="mt-4 text-sm max-lg:ml-8">
           <div>
             <span class="mr-1 text-gray-400">上映日期: </span
             >{{ movie.release_date }}
@@ -62,7 +62,7 @@
           {{ movie.overview }}
         </p>
 
-        <div class="mt-6 mb-3 ml-5">
+        <div class="mt-6 mb-3 ml-5 max-sm:ml-10">
           <a
             v-if="movie.videos"
             @click.prevent="openYouTubeModel"
@@ -92,7 +92,7 @@
 
           <div
             v-show="!this.isCollect"
-            class="inline-flex px-8 py-3 ml-8 text-black bg-yellow-500 rounded cursor-pointer hover:text-white hover:shadow-lg hover:bg-blue-700"
+            class="inline-flex px-8 py-3 ml-8 text-black bg-yellow-500 rounded cursor-pointer max-sm:ml-20 hover:text-white hover:shadow-lg hover:bg-blue-700"
             @click.prevent="addToWatch"
           >
             <svg

@@ -2,7 +2,7 @@
   <div class="container mx-auto mt-3 mb-16 border-t border-gray-600">
     <h2 class="mt-3 text-4xl font-semibold">相關系列</h2>
 
-    <div class="grid gap-8 mt-3 sm:grid-cols-2 lg:grid-cols-5">
+    <div class="grid grid-cols-2 gap-8 mt-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
       <div :key="collection.id" v-for="collection in this.collections">
         <router-link
           :to="`/movie/${collection.id}`"
@@ -10,10 +10,9 @@
         >
           <img
             :src="movieImage(collection)"
-            class="mt-1 transition duration-150 ease-in-out hover:opacity-75"
+            class="mt-1 transition duration-150 ease-in-out hover:opacity-75 max-lg:m-auto"
           />
-
-          {{ collection.title }}
+          <div class="max-lg:ml-5">{{ collection.title }}</div>
         </router-link>
       </div>
     </div>

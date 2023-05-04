@@ -1,12 +1,12 @@
 <template>
   <div>
-    <div class="container flex pt-16 mx-auto actor-page">
+    <div class="container flex pt-16 mx-auto actor-page max-sm:pt-12">
       <div class="flex-none">
         <img :src="castProfileImage()" alt="" class="max-sm:m-auto" />
       </div>
 
       <div class="ml-10">
-        <ul class="md:mt-40 md:flex-col md:space-y-10 max-sm:flex socail-icon max-sm:space-x-10">
+        <ul class="md:mt-40 md:flex-col md:space-y-10 max-sm:flex socail-icon max-sm:ml-32 max-sm:space-x-10">
           <li v-if="socialDetails.facebook_id">
             <a              
               :href="'https://facebook.com/' + socialDetails.facebook_id"
@@ -61,7 +61,7 @@
       </div>
 
       <div class="ml-16 max-lg:mx-5 max-lg:mt-5">
-        <h2 class="text-4xl font-semibold">
+        <h2 class="text-4xl font-semibold max-lg:text-center">
           {{ this.actor.name }}
         </h2>
 

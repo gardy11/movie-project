@@ -22,7 +22,7 @@ input.search-input {
 }
 
 
-@media(max-width:900px){
+@media(max-width:640px){
   .rwd {
     display:flex;
     flex-direction:column;
@@ -30,7 +30,7 @@ input.search-input {
   }
 }
 
-@media(max-width:900px){
+@media(max-width:640px){
   .header-bar , .actor-page {
     display:flex;
     flex-direction:column;
@@ -38,13 +38,13 @@ input.search-input {
   }
 }
 
-@media(max-width:900px){
+@media(max-width:640px){
   .searchbar-icon {
     margin-top:3px;
   }
 }
 
-@media(max-width:900px){
+@media(max-width:640px){
   .socail-icon  {
     display:flex;
     flex-direction:row;

@@ -1,5 +1,5 @@
 <template>
-    <div id="example">
+    <div class="mx-5">
       <h2 class="mt-20 text-xl font-semibold text-yellow-500">最高評分</h2>
       <carousel-3d
         :controls-visible="true"
