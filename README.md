@@ -12,3 +12,5 @@
   * 右上角搜尋欄 輸入電影標題或演員名稱可以搜尋電影與演員  
 
 * GitHub Page : https://gardy11.github.io/movie-project/  
+
+擷取.PNG
