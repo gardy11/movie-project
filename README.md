@@ -15,13 +15,13 @@
 
 # ScreenShots
 
-* home-page：
+* home-page
 ![image](https://raw.githubusercontent.com/gardy11/movie-project/main/home-page.PNG)
-* movie-detail：
+* movie-detail
 ![image](https://raw.githubusercontent.com/gardy11/movie-project/main/movie-detail.PNG)
-* collection：
+* collection
 ![image](https://raw.githubusercontent.com/gardy11/movie-project/main/collection.PNG)
-* actor-page：
+* actor-page
 ![image](https://raw.githubusercontent.com/gardy11/movie-project/main/actor-page.PNG)
-* actor-detai：
+* actor-detail
 ![image](https://raw.githubusercontent.com/gardy11/movie-project/main/actor-detail.PNG)
