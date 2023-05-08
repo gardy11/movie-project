@@ -1,17 +1,21 @@
 <template>
   <div>
-    <div class="container flex pb-3 mx-auto mt-10 mb-2 rwd">
-      <img :src="posterPath" class="w-64 max-lg:m-auto h-96" alt="" />
-      <div class="flex-col items-center justify-between ml-24 max-lg:ml-5">
-        <h1 class="text-4xl font-semibold max-lg:mt-5 max-lg:text-center">{{ movie.title }}</h1>
+    <div class="container flex pb-3 m-auto mt-10 mb-2 movie-page">
+      <img :src="posterPath" class="w-64 max-sm:m-auto h-96" alt="" />
+      <div
+        class="flex-col items-center justify-between ml-24 max-lg:ml-5 max-lg:mt-2"
+      >
+        <h1 class="text-4xl font-semibold max-sm:mt-3 max-sm:text-center">
+          {{ movie.title }}
+        </h1>
 
         <h1
           v-if="movie.original_title != movie.title"
-          class="text-xl font-semibold text-purple-500 max-lg:text-center"
+          class="text-xl font-semibold text-purple-500 max-sm:text-center"
         >
           {{ movie.original_title }}
         </h1>
-        <div class="mt-4 text-sm max-lg:ml-8">
+        <div class="mt-4 text-sm max-sm:mx-8">
           <div>
             <span class="mr-1 text-gray-400">上映日期: </span
             >{{ movie.release_date }}
@@ -58,7 +62,7 @@
             </div>
           </div>
         </div>
-        <p class="mt-6 max-lg:mx-5">
+        <p class="mt-6 max-sm:mx-5">
           {{ movie.overview }}
         </p>
 
@@ -92,7 +96,7 @@
 
           <div
             v-show="!this.isCollect"
-            class="inline-flex px-8 py-3 ml-8 text-black bg-yellow-500 rounded cursor-pointer max-sm:ml-20 hover:text-white hover:shadow-lg hover:bg-blue-700"
+            class="inline-flex px-8 py-3 ml-8 text-black bg-yellow-500 rounded cursor-pointer hover:text-white hover:shadow-lg hover:bg-blue-700"
             @click.prevent="addToWatch"
           >
             <svg
@@ -225,11 +229,11 @@ export default {
       },
       deep: true,
     },
-    isCollect: { 
+    isCollect: {
       handler: function () {
         this.ckeckToWatch();
       },
-      immediate: true
+      immediate: true,
     },
   },
   created() {
@@ -343,12 +347,10 @@ export default {
       this.isCollect = false;
     },
 
-    ckeckToWatch() {     
+    ckeckToWatch() {
       return this.isCollect;
     },
-  
   },
-
 
   computed: {
     posterPath() {

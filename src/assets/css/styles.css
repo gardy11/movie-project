@@ -21,20 +21,10 @@ input.search-input {
     }
 }
 
-
 @media(max-width:640px){
-  .rwd {
+  .header-bar , .actor-page , .movie-page{
     display:flex;
     flex-direction:column;
-    justify-content: center;
-  }
-}
-
-@media(max-width:640px){
-  .header-bar , .actor-page {
-    display:flex;
-    flex-direction:column;
-    justify-content: center;
   }
 }
 
@@ -47,12 +37,7 @@ input.search-input {
 @media(max-width:640px){
   .socail-icon  {
     display:flex;
-    flex-direction:row;
-    margin-top:10px;
-    /* --tw-space-x-reverse: 0;
-    margin-right: calc(2.5rem * var(--tw-space-x-reverse));
-    margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse))); */
-  
+    margin-top:14px;  
   }
 }
 

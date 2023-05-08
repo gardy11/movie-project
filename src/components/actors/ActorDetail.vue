@@ -1,14 +1,16 @@
 <template>
   <div>
-    <div class="container flex pt-16 mx-auto actor-page max-sm:pt-12">
+    <div class="container flex pt-16 mx-auto actor-page max-sm:pt-10">
       <div class="flex-none">
         <img :src="castProfileImage()" alt="" class="max-sm:m-auto" />
       </div>
 
-      <div class="ml-10">
-        <ul class="md:mt-40 md:flex-col md:space-y-10 max-sm:flex socail-icon max-sm:ml-32 max-sm:space-x-10">
+      <div class="ml-10 max-sm:m-auto">
+        <ul
+          class="sm:mt-40 sm:space-y-10 sm:flex-col socail-icon max-sm:space-x-10"
+        >
           <li v-if="socialDetails.facebook_id">
-            <a              
+            <a
               :href="'https://facebook.com/' + socialDetails.facebook_id"
               title="Facebook"
               target="_blank"
@@ -25,7 +27,7 @@
           </li>
 
           <li v-if="socialDetails.instagram_id">
-            <a              
+            <a
               :href="'https://instagram.com/' + socialDetails.instagram_id"
               title="Instagram"
               target="_blank"
@@ -42,14 +44,14 @@
           </li>
 
           <li v-if="socialDetails.twitter_id">
-            <a             
+            <a
               :href="'https://twitter.com/' + socialDetails.twitter_id"
               title="Twitter"
               target="_blank"
             >
               <svg
                 class="w-6 text-gray-400 fill-current hover:text-white"
-                viewBox="0 0 512 512"
+                viewBox="0 0 448 512"
               >
                 <path
                   d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
@@ -60,27 +62,35 @@
         </ul>
       </div>
 
-      <div class="ml-16 max-lg:mx-5 max-lg:mt-5">
-        <h2 class="text-4xl font-semibold max-lg:text-center">
+      <div class="ml-16 max-lg:mx-5 max-lg:mt-4">
+        <h2 class="text-4xl font-semibold max-sm:text-center">
           {{ this.actor.name }}
         </h2>
 
-        <div class="mt-4" v-if="this.actor.birthday != null">
+        <div class="mt-4 movie-page" v-if="this.actor.birthday != null">
           <span
             v-if="this.actor.deathday == null"
             class="ml-2 text-sm text-gray-400"
             >出生: {{ this.actor.birthday }} ({{
               getAge(this.actor.birthday) + "歲"
-            }}) 
+            }})
           </span>
 
-          <span v-if="this.actor.deathday == null" class="ml-2 text-sm text-gray-400">出生地: {{ this.actor.place_of_birth }}</span>
+          <span
+            v-if="this.actor.deathday == null"
+            class="ml-2 text-sm text-gray-400"
+            >出生地: {{ this.actor.place_of_birth }}</span
+          >
 
           <div v-if="this.actor.deathday != null">
-            <span class="ml-2 text-sm text-gray-400">
+            <span class="ml-2 text-sm text-gray-400 movie-page">
               出生: {{ this.actor.birthday }}
             </span>
-            <span v-if="this.actor.deathday != null" class="ml-2 text-sm text-gray-400">{{ this.actor.place_of_birth }}</span>
+            <span
+              v-if="this.actor.deathday != null"
+              class="ml-2 text-sm text-gray-400"
+              >出生地: {{ this.actor.place_of_birth }}</span
+            >
 
             <p class="ml-2 text-sm text-gray-400">
               逝世: {{ this.actor.deathday }} ({{
@@ -99,8 +109,8 @@
       </div>
     </div>
 
-    <div class="container mx-auto mb-12 px-9" v-if="this.castMovies!=false">
-      <h4 class="mt-10 text-xl font-semibold text-yellow-500 ">電影作品</h4>
+    <div class="container mx-auto mb-12 px-9" v-if="this.castMovies != false">
+      <h4 class="mt-10 text-xl font-semibold text-yellow-500">電影作品</h4>
       <div
         class="grid grid-cols-2 gap-8 mt-4 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-6"
       >
@@ -165,11 +175,11 @@ export default {
 
       this.castMovies = response.data.cast.filter(
         (x) => x.media_type == "movie"
-      )
-      if(this.castMovies == false){
+      );
+      if (this.castMovies == false) {
         this.castMovies = response.data.cast.filter(
-        (x) => x.media_type == "tv"
-      )
+          (x) => x.media_type == "tv"
+        );
       }
     },
 
