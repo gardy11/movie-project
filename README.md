@@ -27,3 +27,5 @@
 ![image](https://raw.githubusercontent.com/gardy11/movie-project/main/actor-page.PNG)
 * actor-detail
 ![image](https://raw.githubusercontent.com/gardy11/movie-project/main/actor-detail.PNG)
+* search
+![image](https://raw.githubusercontent.com/gardy11/movie-project/main/search.PNG)
