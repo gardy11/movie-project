@@ -39,8 +39,8 @@
           <!-- <router-link
              v-if="movie.overview"
              @click="showSearchResult = false"
-            :to="`/movie/${movie.id}`"
-            class="flex items-center p-1 border-b border-gray-500"
+             :to="`/movie/${movie.id}`"
+             class="flex items-center p-1 border-b border-gray-500"
           > -->
           <a
             v-if="movie.overview"
@@ -48,12 +48,7 @@
             @click="showSearchResult = false"
             class="flex items-center p-1 border-b border-gray-500"
           >
-            <img
-              v-if="movie.poster_path"
-              :src="posterPath(movie.poster_path)"
-              alt=""
-              class="w-10"
-            />
+            <img :src="posterPath(movie.poster_path)" alt="" class="w-10" />
             <div class="flex flex-col">
               <span v-if="movie.title" class="ml-3">{{ movie.title }}</span>
               <span
@@ -69,7 +64,7 @@
 
           <!-- 演員 -->
           <!-- <router-link
-          v-if="movie.gender"
+            v-if="movie.gender"
             :to="`/actor/${movie.id}`"
             @click="showSearchResult = false"
             class="flex items-center p-1 border-b border-gray-500"
@@ -80,19 +75,9 @@
             @click="showSearchResult = false"
             class="flex items-center p-1 border-b border-gray-500"
           >
-            <img
-              v-if="movie.profile_path"
-              :src="posterPath(movie.profile_path)"
-              alt=""
-              class="w-10"
-            />
+            <img :src="posterPath(movie.profile_path)" alt="" class="w-10" />
             <div class="flex flex-col">
               <span v-if="movie.name" class="ml-3">{{ movie.name }}</span>
-              <!-- <span
-                v-if ="movie.original_title != movie.title"
-                class="ml-3 text-sm"
-                >{{ movie.original_title }}</span
-              > -->
             </div>
           </a>
           <!-- </router-link> -->
