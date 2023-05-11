@@ -161,11 +161,11 @@ export default {
         }
       });
 
-      // window.addEventListener("keydown", (e) =>{
-      //   if(e.key == "Escape") {
-      //     this.showSearchResult = false;
-      //   }
-      // });
+      window.addEventListener("keydown", (e) =>{
+        if(e.key == "Escape") {
+          this.showSearchResult = false;
+        }
+      });
     },
 
     posterPath(poster_path) {
