@@ -20,14 +20,14 @@ let router = new VueRouter({
             component: HomeWorld,
         },
         {
-            path: "/movie/:id",
+            path: "/movie-project/movie/:id",
             name: "movie",
             component: MovieData,searchBar
         },
         {
             path: "/actors",
             name: "actors",
-            component: ActorsData,
+            component: ActorsData,searchBar
         },
         {
             path: "/actor/:id",
