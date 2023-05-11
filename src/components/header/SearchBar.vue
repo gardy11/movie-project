@@ -36,18 +36,18 @@
       <ul class="mt-1" v-if="showSearchResult">
         <li v-for="(movie, index) in searchResult" :key="index">
           <!-- 電影 -->
-          <!-- <router-link
+          <router-link
              v-if="movie.overview"
              @click="showSearchResult = false"
              :to="`/movie/${movie.id}`"
              class="flex items-center p-1 border-b border-gray-500"
-          > -->
-          <a
+          >
+          <!-- <a
             v-if="movie.overview"
             :href="$router.resolve(`/movie/${movie.id}`).href"
             @click="showSearchResult = false"
             class="flex items-center p-1 border-b border-gray-500"
-          >
+          > -->
             <img :src="posterPath(movie.poster_path)" alt="" class="w-10" />
             <div class="flex flex-col">
               <span v-if="movie.title" class="ml-3">{{ movie.title }}</span>
@@ -59,8 +59,8 @@
                 >{{ movie.original_title }}</span
               >
             </div>
-          </a>
-          <!-- </router-link> -->
+          <!-- </a> -->
+          </router-link>
 
           <!-- 演員 -->
           <!-- <router-link
