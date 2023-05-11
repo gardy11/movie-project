@@ -63,7 +63,7 @@
 
           <!-- 演員 -->
           <router-link 
-            :to="`/actor/${this.movie.id}`"
+            :to="`/actor/${movie.id}`"
             class="flex items-center p-1 border-b border-gray-500"
             v-if="movie.gender"
           >
