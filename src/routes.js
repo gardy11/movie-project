@@ -22,12 +22,12 @@ let router = new VueRouter({
         {
             path: "/movie-project/movie/:id",
             name: "movie",
-            component: MovieData,searchBar
+            component: MovieData
         },
         {
             path: "/actors",
             name: "actors",
-            component: ActorsData,searchBar
+            component: ActorsData
         },
         {
             path: "/actor/:id",
