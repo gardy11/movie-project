@@ -37,7 +37,7 @@
         <li v-for="(movie, index) in searchResult" :key="index">
           <!-- 電影 -->
           <router-link
-             v-if="movie.overview"
+            
              :to="`/movie/${movie.id}`"
              @click.native="showSearchResult = false"
              class="flex items-center p-1 border-b border-gray-500"
