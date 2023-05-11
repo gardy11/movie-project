@@ -38,7 +38,7 @@
           <!-- 電影 -->
           <router-link
              :to="`/movie/${movie.id}`"
-             @click.native="showSearchResult = false"
+             
              class="flex items-center p-1 border-b border-gray-500"
              v-if="movie.overview"
           >
