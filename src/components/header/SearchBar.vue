@@ -63,7 +63,7 @@
           </router-link>
 
           <!-- 演員 -->
-          <router-link :to="`/actor/${movie.id}`"
+          <router-link :to="`/actor/${this.movie.id}`"
             
             @click.native="showSearchResult = false"
             class="flex items-center p-1 border-b border-gray-500"
