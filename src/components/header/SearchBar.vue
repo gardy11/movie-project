@@ -37,11 +37,12 @@
         <li v-for="(movie, index) in searchResult" :key="index">
           <!-- 電影 -->
           <router-link
-              v-if="movie.overview"
-             :to="`/movie/${movie.id}`"
-             class="flex items-center p-1 border-b border-gray-500"
+            v-if="movie.overview"
+            @click.native="showSearchResult = false"
+            :to="`/movie/${movie.id}`"
+            class="flex items-center p-1 border-b border-gray-500"
           >
-          <!-- <a
+            <!-- <a
             v-if="movie.overview"
             :href="$router.resolve(`/movie/${movie.id}`).href"
             @click="showSearchResult = false"
@@ -58,16 +59,17 @@
                 >{{ movie.original_title }}</span
               >
             </div>
-          <!-- </a> -->
+            <!-- </a> -->
           </router-link>
 
           <!-- 演員 -->
-          <router-link 
+          <router-link
             v-if="movie.gender"
+            @click.native="showSearchResult = false"
             :to="`/actor/${movie.id}`"
             class="flex items-center p-1 border-b border-gray-500"
           >
-          <!-- <a
+            <!-- <a
             v-if="movie.gender"
             :href="$router.resolve(`/actor/${movie.id}`).href"
             @click="showSearchResult = false"
@@ -77,7 +79,7 @@
             <div class="flex flex-col">
               <span v-if="movie.name" class="ml-3">{{ movie.name }}</span>
             </div>
-          <!-- </a> -->
+            <!-- </a> -->
           </router-link>
         </li>
       </ul>
