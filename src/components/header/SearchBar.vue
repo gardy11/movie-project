@@ -34,7 +34,7 @@
 
     <div class="absolute z-50 mt-10 bg-gray-600 rounded w-60">
       <ul class="mt-1" v-if="showSearchResult">
-        <li v-for="(movie, index) in this.searchResult" :key="index">
+        <li v-for="(movie, index) in searchResult" :key="index">
           <!-- 電影 -->
           <router-link
              :to="`/movie/${movie.id}`"
