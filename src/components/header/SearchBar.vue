@@ -37,9 +37,9 @@
         <li v-for="(movie, index) in searchResult" :key="index">
           <!-- 電影 -->
           <router-link
+              v-if="movie.overview"
              :to="`/movie/${movie.id}`"
              class="flex items-center p-1 border-b border-gray-500"
-             v-if="movie.overview"
           >
           <!-- <a
             v-if="movie.overview"
@@ -63,9 +63,9 @@
 
           <!-- 演員 -->
           <router-link 
+            v-if="movie.gender"
             :to="`/actor/${movie.id}`"
             class="flex items-center p-1 border-b border-gray-500"
-            v-if="movie.gender"
           >
           <!-- <a
             v-if="movie.gender"
