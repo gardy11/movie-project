@@ -3,7 +3,8 @@ import HomeWorld from './components/front/HomeWorld';
 import MovieData from './components/movies/MovieData';
 import ActorsData from './components/actors/ActorsData';
 import ActorDetail from './components/actors/ActorDetail';
-import WatchMovie from './components/movies/WatchMovie'
+import WatchMovie from './components/movies/WatchMovie';
+import searchBar from './components/header/SearchBar'
 
 let router = new VueRouter({
     mode: "history",
@@ -21,7 +22,7 @@ let router = new VueRouter({
         {
             path: "/movie/:id",
             name: "movie",
-            component: MovieData,
+            component: MovieData,searchBar
         },
         {
             path: "/actors",
