@@ -38,9 +38,7 @@
           <!-- 電影 -->
           <router-link
              :to="`/movie/${movie.id}`"
-             @click.native="showSearchResult = false"
-             class="flex items-center p-1 border-b border-gray-500"
-             v-if="movie.overview"
+             
           >
           <!-- <a
             v-if="movie.overview"
@@ -64,10 +62,10 @@
 
           <!-- 演員 -->
           <router-link
-            v-if="movie.gender"
             :to="`/actor/${movie.id}`"
             @click.native="showSearchResult = false"
             class="flex items-center p-1 border-b border-gray-500"
+            v-if="movie.gender"
           >
           <!-- <a
             v-if="movie.gender"
