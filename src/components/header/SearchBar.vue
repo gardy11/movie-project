@@ -38,8 +38,8 @@
           <!-- 電影 -->
           <router-link
              v-if="movie.overview"
-             @click="showSearchResult = false"
              :to="`/movie/${movie.id}`"
+             @click.native="showSearchResult = false"
              class="flex items-center p-1 border-b border-gray-500"
           >
           <!-- <a
@@ -63,24 +63,24 @@
           </router-link>
 
           <!-- 演員 -->
-          <!-- <router-link
+          <router-link
             v-if="movie.gender"
             :to="`/actor/${movie.id}`"
-            @click="showSearchResult = false"
+            @click.native="showSearchResult = false"
             class="flex items-center p-1 border-b border-gray-500"
-          > -->
-          <a
+          >
+          <!-- <a
             v-if="movie.gender"
             :href="$router.resolve(`/actor/${movie.id}`).href"
             @click="showSearchResult = false"
             class="flex items-center p-1 border-b border-gray-500"
-          >
+          > -->
             <img :src="posterPath(movie.profile_path)" alt="" class="w-10" />
             <div class="flex flex-col">
               <span v-if="movie.name" class="ml-3">{{ movie.name }}</span>
             </div>
-          </a>
-          <!-- </router-link> -->
+          <!-- </a> -->
+          </router-link>
         </li>
       </ul>
 
