@@ -1,7 +1,7 @@
 # movie-project
 * 功能介紹：
 
-  * 練習用vue2建置可查看電影及演員資訊的網站  
+  * 用Vue.js建置可查看電影及演員資訊的網站  
   * 串接The Movie Database（TMDb）API  
 
   * 點擊某部電影可以查看更多電影資訊  
