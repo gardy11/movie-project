@@ -7,7 +7,7 @@ import WatchMovie from './components/movies/WatchMovie'
 
 let router = new VueRouter({
     mode: "hash",
-    base: "/movie-project",
+    base: "/movie-project/",
     routes: [
         {
             path: '/',
