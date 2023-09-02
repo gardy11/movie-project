@@ -1,6 +1,8 @@
 /* eslint-disable no-console */
 const execa = require("execa");
-const fs = require("fs");
+const fs = require("fs").promises;
+const path = require("path");
+
 (async () => {
   try {
     await execa("git", ["checkout", "--orphan", "gh-pages"]);
@@ -12,8 +14,13 @@ const fs = require("fs");
     await execa("git", ["--work-tree", folderName, "add", "--all"]);
     await execa("git", ["--work-tree", folderName, "commit", "-m", "gh-pages"]);
     console.log("Pushing to gh-pages...");
+
+    // 复制并重命名index.html
+    const sourceFilePath = path.join(__dirname, folderName, "index.html");
+    const destinationFilePath = path.join(__dirname, "public", "404.html");
+    await fs.copyFile(sourceFilePath, destinationFilePath);
+
     await execa("git", ["push", "origin", "HEAD:gh-pages", "--force"]);
-    // await execa("rm", ["-r", folderName]);
     await execa("rimraf", [folderName]);
     await execa("git", ["checkout", "-f", "main"]);
     await execa("git", ["branch", "-D", "gh-pages"]);
