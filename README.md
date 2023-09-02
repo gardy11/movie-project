@@ -1,7 +1,7 @@
 # movie-project
 * 功能介紹：
 
-  * 練習用vue2建置可查看電影及演員資訊的網站  
+  * 用Vue.js建置可查看電影及演員資訊的網站  
   * 串接The Movie Database（TMDb）API  
 
   * 點擊某部電影可以查看更多電影資訊  
@@ -11,7 +11,7 @@
 
   * 右上角搜尋欄 輸入電影標題或演員名稱可以搜尋電影與演員 
 
-  * 主要使用Tailwind CSS呈現畫面並實作RWD響應式設計
+  * 主要使用Tailwind CSS呈現畫面另外也實作RWD響應式設計
 
 * GitHub Page : https://gardy11.github.io/movie-project/  
 
