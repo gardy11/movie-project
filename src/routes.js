@@ -6,7 +6,7 @@ import ActorDetail from './components/actors/ActorDetail';
 import WatchMovie from './components/movies/WatchMovie'
 
 let router = new VueRouter({
-    mode: "history",
+    mode: "hash",
     routes: [
         {
             path: '/',
