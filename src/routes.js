@@ -6,6 +6,7 @@ import ActorDetail from './components/actors/ActorDetail';
 import WatchMovie from './components/movies/WatchMovie'
 
 let router = new VueRouter({
+    // 要把 mode: history 改成下面這兩行,github page切換的路由 refresh時才不會出現404錯誤
     mode: "hash",
     base: "/movie-project/",
     routes: [
